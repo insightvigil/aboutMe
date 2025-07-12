@@ -13,5 +13,5 @@ You can check it out live [here](https://insightvigil.github.io/profile-links
 ### Contributors 🤝
 - [Adrián Vigil](https://github.com/insightvigil)
 
-Project developed during _Curso de Git y GitHub by Platzi_
+Project deployed during _Curso de Git y GitHub by Platzi_
 
