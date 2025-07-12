@@ -23,6 +23,8 @@ body {
 	#1a1952,  
 	#adc0ff
 	);
+	width: 100%;
+	min-height: 100vh;
 }
 
 .profile-card{
