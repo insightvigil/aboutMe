@@ -1,6 +1,6 @@
 ## Profile links page V1 🚀
 
-A personalized Linktree-style web page to centralize and share my social and professional profiles.
+A personalized web page to centralize and share my social and professional profiles.
 
 ### Applied technologies 🧑‍💻
 - HTML
