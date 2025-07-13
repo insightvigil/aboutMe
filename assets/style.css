@@ -1,6 +1,6 @@
 :root {
 	
-	--primary-color:hsla(241, 53%, 21%, 0.6);
+	--primary-color:hsla(240, 1%, 17%, 0.6);
 	--secondary-color: hsla(227, 100%, 84%, 0.5);
 	--white: whitesmoke;
 }
@@ -43,6 +43,7 @@ body {
 	align-items: center;
 
 	border-radius: 24px;
+	
 	
 }
 
@@ -97,7 +98,7 @@ main {
 	height: 72px;
 	margin: 12px auto;
 	border: 1px solid lightgray;
-	box-shadow:  4px 6px rgba(0, 0, 0, 0.1);
+	box-shadow:0 4px 8px,rgba(0,0,0,0.16);
 
 	
 	
