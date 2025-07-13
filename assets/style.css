@@ -1,7 +1,8 @@
 :root {
 	
-	--primary-color:#1a1952;
-	--secondary-color: #adc0ff;
+	--primary-color:hsla(241, 53%, 21%, 0.6);
+	--secondary-color: hsla(227, 100%, 84%, 0.5);
+	--white: whitesmoke;
 }
 
 
@@ -10,25 +11,29 @@
 	padding: 0;
 	margin: 0;
 	font-family: "Inter", sans-serif;
-	color:black;
+	color: var(--white);
 }
 
 body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background: linear-gradient(
+	background-image: url('https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	/*background: linear-gradient(
 	-45deg,
 	#1a1952,  
 	#adc0ff
-	);
+	);*/
 	width: 100%;
 	height: 100vh;
 	
 }
 
 .profile-card{
-	background-color: var(--secondary-color);
+	background-color: var(--primary-color);
 	width: 80%;
 	height: 90vh;
 	
@@ -37,7 +42,7 @@ body {
 	justify-content: center;
 	align-items: center;
 
-	border-radius: 12px;
+	border-radius: 24px;
 	
 }
 
@@ -55,6 +60,10 @@ header {
 .profile-card__avatar {
 	border: solid 5px whitesmoke;
 	border-radius: 100%;
+}
+
+.profile-card__user-data {
+	line-height: 24px;
 }
 
 .profile-card__link{
@@ -86,7 +95,7 @@ main {
 	align-items: center;
 	width: 80%;
 	height: 72px;
-	margin: 24px auto;
+	margin: 12px auto;
 	border: 1px solid lightgray;
 	box-shadow:  4px 6px rgba(0, 0, 0, 0.1);
 
@@ -109,6 +118,6 @@ footer {
 
 footer small {
 	position: absolute;
-	bottom: 5px;
-	color: #121212;
+	bottom: 15px;
+	
 }
