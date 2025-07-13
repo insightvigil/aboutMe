@@ -1,10 +1,16 @@
 :root {
-	
 	--primary-color: hsla(241, 53%, 21%, 0.6);
-	--secondary-color: hsla(227, 100%, 84%, 0.5);
-	--white: whitesmoke;
+	--secondary-color: hsla(0, 0%, 96%, 0.2);
+	--text-color: #c9daff;
+	--bg-img: url('https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg')
 }
 
+[data-theme="light"] {
+	--primary-color: hsla(226, 53%, 85%, 0.5); 
+	--secondary-color: hsla(0, 0%, 20%, 0.1); 
+	--text-color: #33393c; 
+	--bg-img: url('https://images.pexels.com/photos/2086620/pexels-photo-2086620.jpeg')
+}
 
 * {
 	box-sizing: border-box;
@@ -18,18 +24,26 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-image: url('https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg');
+	background-image: var(--bg-img);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	/*background: linear-gradient(
-	-45deg,
-	#1a1952,  
-	#adc0ff
-	);*/
 	width: 100%;
 	height: 100vh;
+	color: var(--text-color);
 	
+}
+
+.theme-switcher {
+	padding: 5px;
+	align-self: flex-start;
+	position: relative;
+	top: 10px;
+	font-size: 12px;
+	font-weight: 600;
+	cursor: pointer;
+	border: 1px solid var(--text-color);
+	border-radius: 8px;
 }
 
 .profile-card{
@@ -59,7 +73,7 @@ header {
 }
 
 .profile-card__avatar {
-	border: solid 5px whitesmoke;
+	border: solid 5px var(--text-color);
 	border-radius: 100%;
 }
 
@@ -97,7 +111,7 @@ main {
 	width: 80%;
 	height: 72px;
 	margin: 12px auto;
-	border: 1px solid lightgray;
+	border: 1px solid var(--text-color);
 }
 
 .profile-card__section a {
@@ -105,7 +119,7 @@ main {
 }
 
 .profile-card__section:hover {
-	background-color: hsla(0, 0%, 96%, 0.2);
+	background-color: var(--secondary-color);
 	transform: scale(1.1);
 }
 
@@ -128,8 +142,4 @@ footer small {
 	
 }
 
-/*
-.light {
-	background-color: white;
-}
-*/
+
