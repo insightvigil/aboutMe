@@ -1,13 +1,13 @@
 :root {
-	--primary-color: hsla(241, 53%, 21%, 0.6);
-	--secondary-color: hsla(0, 0%, 96%, 0.2);
-	--text-color: #c9daff;
+	--primary-color: hsla(230, 27%, 12%, 0.6);
+	--secondary-color: hsla(0, 0%, 100%, 0.3);
+	--text-color: whitesmoke;
 	--bg-img: url('../img/bg-night.jpeg')
 }
 
 [data-theme="light"] {
-	--primary-color: hsla(226, 53%, 85%, 0.5); 
-	--secondary-color: hsla(0, 0%, 20%, 0.1); 
+	--primary-color: hsla(210, 30%, 95%, 0.5);
+	--secondary-color: hsla(210, 20%, 30%, 0.2);
 	--text-color: #33393c; 
 	--bg-img: url('../img/bg-day.jpeg')
 }
