@@ -2,14 +2,14 @@
 	--primary-color: hsla(241, 53%, 21%, 0.6);
 	--secondary-color: hsla(0, 0%, 96%, 0.2);
 	--text-color: #c9daff;
-	--bg-img: url('https://images.pexels.com/photos/1257860/pexels-photo-1257860.jpeg')
+	--bg-img: url('../img/bg-night.jpeg')
 }
 
 [data-theme="light"] {
 	--primary-color: hsla(226, 53%, 85%, 0.5); 
 	--secondary-color: hsla(0, 0%, 20%, 0.1); 
 	--text-color: #33393c; 
-	--bg-img: url('https://images.pexels.com/photos/2086620/pexels-photo-2086620.jpeg')
+	--bg-img: url('../img/bg-day.jpeg')
 }
 
 * {
