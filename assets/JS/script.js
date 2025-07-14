@@ -21,14 +21,28 @@ const switchTheme = () => {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     if (!currentTheme || currentTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'light')
+        localStorage.setItem('data-theme','light');
         lightMode();
     }
 
     else {
         document.documentElement.setAttribute('data-theme', 'dark')
+        localStorage.setItem('data-theme','dark');
         darkMode();
     }
 }
 
 //Evenet Listener 
 themeSwitcher.addEventListener('click', switchTheme);
+
+const saveTheme = localStorage.getItem('data-theme');
+
+if(saveTheme) {
+    document.documentElement.setAttribute('data-theme',saveTheme);
+        if(saveTheme === 'light') {
+            darkMode()
+        }
+        else {
+            lightMode()
+        }
+}
