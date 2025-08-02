@@ -8,8 +8,10 @@ header {
 	height: 40%;
 	text-align: center;
 	gap: 10px;
+    margin-bottom: 12px;
 
     .profile-card__avatar {
+        margin-top: 24px;
 	border: solid 5px var(--text-color);
 	border-radius: 100%;
     }
