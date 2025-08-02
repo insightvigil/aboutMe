@@ -23,16 +23,6 @@
 	border-radius: 8px;
 }
 
-.profile-card{
-    @include flex-center(column);
-	background-color: var(--primary-color);
-	width: 40%;
-	height: auto;
-	margin: 24px 0;
-
-	border-radius: 24px;    
-    border: var(--border)
-}
 
 
 

@@ -145,19 +145,6 @@ footer {
   border-radius: 8px;
 }
 
-.profile-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: var(--primary-color);
-  width: 40%;
-  height: auto;
-  margin: 24px 0;
-  border-radius: 24px;
-  border: var(--border);
-}
-
 @media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
   .profile-card {
     width: 75%;
