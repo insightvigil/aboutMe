@@ -1,5 +1,6 @@
 @use '../mixins' as *;
 .profile-card{
+    position: relative;
     @include flex-center(column);
 	background-color: var(--primary-color);
 	width: 40%;
