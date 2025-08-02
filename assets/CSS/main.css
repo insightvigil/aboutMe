@@ -1,0 +1,200 @@
+.background-container img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --primary-color: hsla(230, 27%, 12%, 0.6);
+  --secondary-color: hsla(0, 0%, 100%, 0.3);
+  --text-color: whitesmoke;
+  --bg-img: url("../img/bg-night.jpeg");
+  --border:1px solid hsla(0, 0%, 100%, 0.125);
+}
+
+[data-theme=light] {
+  --primary-color: hsla(210, 30%, 95%, 0.5);
+  --secondary-color: hsla(210, 20%, 30%, 0.2);
+  --text-color: #33393c;
+  --bg-img: url("../img/bg-day.jpeg");
+  --border: 1px solid hsla(216, 12%, 84%, 0.3);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 100vh;
+  font-size: clamp(1.4rem, 1.6vw, 1.8rem);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  gap: 10px;
+}
+header .profile-card__avatar {
+  border: solid 5px var(--text-color);
+  border-radius: 100%;
+}
+header .profile-card__user-data {
+  line-height: 1.4;
+}
+header .profile-card__user-data h1 {
+  font-size: 2.5rem;
+}
+header .profile-card__user-data h2 {
+  font-size: 1.6rem;
+}
+header .profile-card__links i {
+  margin-right: 10px;
+  font-size: 2.4rem;
+  animation: focus-in-contract 3s linear;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+header .profile-card__links i:hover {
+  transform: scale(1.2);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 50%;
+  font-weight: 800;
+}
+main .profile-card__section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 80%;
+  height: 72px;
+  margin: 12px auto;
+  border: 1px solid var(--text-color);
+}
+main .profile-card__section a {
+  text-decoration: none;
+  text-align: center;
+}
+main .profile-card__section:hover {
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  width: 100%;
+  height: 10%;
+  font-size: 0.9rem;
+  position: relative;
+}
+footer small {
+  position: absolute;
+  bottom: 15px;
+}
+
+.background-container {
+  position: relative;
+  z-index: -1;
+  height: 100vh;
+}
+.background-container img {
+  opacity: 0;
+  object-fit: cover;
+  transition: opacity 0.3s ease;
+}
+.background-container img.active {
+  opacity: 1;
+}
+
+.theme-switcher {
+  padding: 5px;
+  align-self: flex-start;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid var(--text-color);
+  border-radius: 8px;
+}
+
+.profile-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  width: 40%;
+  height: 90vh;
+  border-radius: 24px;
+  border: var(--border);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+  .profile-card {
+    width: 75%;
+  }
+}
+@media screen and (min-width: 350px) and (max-width: 760px) and (orientation: portrait) {
+  .profile-card {
+    width: 90%;
+  }
+  .profile-card header {
+    gap: 15px;
+  }
+  .profile-card header .profile-card__avatar {
+    border: solid 5px var(--text-color);
+    border-radius: 100%;
+  }
+  .profile-card header .profile-card__user-data {
+    line-height: 1.5;
+  }
+  .profile-card header .profile-card__user-data h1 {
+    font-size: 3.5rem;
+  }
+  .profile-card header .profile-card__user-data h2 {
+    font-size: 2rem;
+  }
+  .profile-card header .profile-card__links i {
+    margin-right: 10px;
+    font-size: 3rem;
+    animation: focus-in-contract 3s linear;
+    transition: 0.5s ease;
+    cursor: pointer;
+  }
+  .profile-card header .profile-card__links i:hover {
+    transform: scale(1.2);
+  }
+  .profile-card main section a {
+    font-size: 1.8rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

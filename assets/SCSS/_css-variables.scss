@@ -1,0 +1,15 @@
+:root {
+	--primary-color: hsla(230, 27%, 12%, 0.6);
+	--secondary-color: hsla(0, 0%, 100%, 0.3);
+	--text-color: whitesmoke;
+	--bg-img: url('../img/bg-night.jpeg');
+	--border:1px solid hsla(0, 0%, 100%, 0.125);
+}
+
+[data-theme="light"] {
+	--primary-color: hsla(210, 30%, 95%, 0.5);
+	--secondary-color: hsla(210, 20%, 30%, 0.2);
+	--text-color: #33393c; 
+	--bg-img: url('../img/bg-day.jpeg');
+	--border: 1px solid hsla(216, 12%, 84%, 0.3);
+}

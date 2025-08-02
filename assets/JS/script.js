@@ -1,4 +1,7 @@
 const themeSwitcher = document.getElementById('theme-switcher');
+const background = document.getElementsByClassName('background');
+console.log(background);
+
 
 //Light Mode 
 
@@ -7,12 +10,18 @@ const lightMode = () => {
     themeSwitcher.children[0].textContent = 'Light Mode'
     //We change the icon throught its class
     themeSwitcher.children[1].classList.replace('fa-moon', 'fa-sun')
+    background[0].classList.remove('active');
+    background[1].classList.toggle('active');
+    
+    
 }
 
 const darkMode = () => {
     themeSwitcher.children[0].textContent = 'Dark Mode'
     //We change the icon throught its class
     themeSwitcher.children[1].classList.replace('fa-sun', 'fa-moon')
+    background[0].classList.toggle('active');
+    background[1].classList.remove('active');
 }
 
 // Switche Theme
@@ -40,9 +49,10 @@ const saveTheme = localStorage.getItem('data-theme');
 if(saveTheme) {
     document.documentElement.setAttribute('data-theme',saveTheme);
         if(saveTheme === 'light') {
-            darkMode()
-        }
-        else {
             lightMode()
         }
+        else {
+            darkMode()
+        }
 }
+

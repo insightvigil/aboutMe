@@ -1,0 +1,18 @@
+@use '../mixins';
+
+.background-container {
+    position: relative;
+    z-index: -1;
+    height: 100vh;
+    
+    img {
+        opacity: 0;
+        @extend %full-screen-fixed;
+        object-fit: cover;
+        transition: opacity 0.3s ease;
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

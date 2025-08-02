@@ -1,0 +1,104 @@
+@use './variables' as *;
+@use './mixins' as *;
+@use './css-variables' as *;
+@use './reset' as *;
+@use './layout/header';
+@use './layout/main';
+@use './layout/footer';
+@use './layout/background';
+
+
+
+
+.theme-switcher {
+	padding: 5px;
+	align-self: flex-start;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 8px;
+	font-weight: 600;
+	cursor: pointer;
+	border: 1px solid var(--text-color);
+	border-radius: 8px;
+}
+
+.profile-card{
+    @include flex-center(column);
+	background-color: var(--primary-color);
+	width: 40%;
+	height: 90vh;
+
+	border-radius: 24px;    
+    border: var(--border)
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px) and (orientation: portrait){
+	
+	.profile-card {
+		width: 75%;
+	}
+}
+
+@media screen and (min-width:350px) and (max-width:760px) and (orientation: portrait){
+	
+	.profile-card {
+		width: 90%;
+
+		header {
+			
+			gap: 15px;
+
+			.profile-card__avatar {
+				border: solid 5px var(--text-color);
+				border-radius: 100%;
+			}
+
+			.profile-card__user-data {
+				line-height: 1.5;
+
+				h1 {
+					font-size: 3.5rem;
+				}
+
+				h2 {
+					font-size: 2.0rem;
+				}
+			}
+
+			.profile-card__links{
+
+				i{
+					margin-right: 10px;
+					font-size: 3.0rem;
+					animation: focus-in-contract 3s linear;
+					transition: 0.5s ease;
+					cursor: pointer;
+				}
+
+				i:hover {
+					transform: scale(1.2);
+				}
+			}
+		}
+
+		main {
+			section {
+				a{
+					font-size: 1.8rem;
+				}
+			}
+		}
+	}
+}

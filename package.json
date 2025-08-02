@@ -1,0 +1,23 @@
+{
+  "name": "profile-links",
+  "version": "1.0.0",
+  "description": "A personalized web page to centralize and share my social and professional profiles.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass-dev": "sass --watch assets/SCSS/main.scss assets/CSS/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/insightvigil/profile-links.git"
+  },
+  "author": "Adrian Vigil <insightvigil@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/insightvigil/profile-links/issues"
+  },
+  "homepage": "https://github.com/insightvigil/profile-links#readme",
+  "dependencies": {
+    "sass": "^1.89.2"
+  }
+}
